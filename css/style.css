@@ -12,6 +12,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: Ramillas;
+    src: url(/font/TT\ Ramillas\ Trial\ Black.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Ramillas Out;
+    src: url(/font/TT\ Ramillas\ Trial\ Black\ Outline.ttf) format('truetype');
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -78,6 +88,7 @@ main p{
 }
 
 .containerprimeirapag img{
+    position: absolute;
     margin-top: 10%;
     width: 30%;
     height: auto;
@@ -86,25 +97,42 @@ main p{
 
 }
 
-/*.containerprimeirapag li{
-    margin-top: 50%;
+.containerprimeirapag ul{
+    margin-top: 6%;
+    margin-left: 25%;
 }
-    */
+    
 
 .containerprimeirapag h1{
-    font-size: 600%;
+    position: relative;
+    font-family: Ramillas;
+    font-size: 625%;
     color: #FFF7D4;
 }
 
 .containerprimeirapag h2{
-    font-size: 600%;
+    font-family: Ramillas Out;
+    font-size: 625%;
     color: #daa520;
 }
 
-.containerprimeirapag p{
-    font-size: 110%;
-    background-color: #201355;
+.containerprimeirapag p1{
+    padding: 3%;
+    background-color: #4f4789;
+    margin-top: 10%;
+    margin-left: 55%;
+    position: absolute;
+    color: #FFF7D4;
+    font-family: Folty;
+    font-size: 130%;
+}
 
+.primeira-secao p{
+    margin-left: 5%;
+    margin-bottom: 100%;
+    position: relative;
+    color: #FFF7D4;
+    font-size: 110%;
 }
 
 .segunda-secao{
