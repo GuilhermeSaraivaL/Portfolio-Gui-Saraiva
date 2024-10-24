@@ -1,0 +1,95 @@
+@font-face {
+    font-family: Duke;
+    src: url(/font/Duke\ Charming\ DEMO.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Folty;
+    src: url(/font/Folty-Medium.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #4f4789;
+}
+
+footer {
+    align-items: end;
+    background-color: #4C3D3D;
+}
+
+.containerhead{
+    display: flex;
+    align-items: end;
+    
+}
+
+.containerhead img{
+    width: 5%;
+    height: 5%;
+}
+
+.containerhead h1{
+    color: #FFF7D4;
+    font-size: 200%;
+    margin-left: 5px;
+    font-family: Duke;
+}
+
+
+nav{
+    display: flex;
+    gap: 80px;
+    padding-left: 500px;
+}
+
+a{
+    font-family: Folty;
+    color: #FFF7D4;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+main h1{
+    font-family: Duke;
+}
+
+main p{
+    font-family: Folty;
+}
+
+.containerprimeirapag img{
+    width: 30%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 110px;
+}
+
+.containersegundapag{
+    display: flex;
+    gap: 20px;
+}
+
+.containersegundapag h1{
+    font-size: 500%;
+}
+
+.containersegundapag p{
+    font-size: 150%;
+}
+
+.containersegundapag img{
+    width: 30%;
+    height: auto;
+    gap: 20px;
+    margin-left: 110px;
+}
+
+
