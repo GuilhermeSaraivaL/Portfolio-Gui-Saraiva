@@ -12,12 +12,12 @@
     font-style: normal;
 }
 
-html, body {
-    height: 100%;
+html{
+    scroll-behavior: smooth;
 }
 
-body {
-    background-color: #4f4789;
+html, body {
+    height: 100%;
 }
 
 footer {
@@ -28,6 +28,7 @@ footer {
 .containerhead{
     display: flex;
     align-items: end;
+    background-color: #4f4789;
     
 }
 
@@ -57,6 +58,11 @@ a{
     font-size: 150%;
 }
 
+.primeira-secao{
+    height: 100vh;
+    background-color: #4f4789;
+}
+
 main h1{
     font-family: Duke;
 }
@@ -65,11 +71,45 @@ main p{
     font-family: Folty;
 }
 
+.containerprimeirapag{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 .containerprimeirapag img{
+    margin-top: 10%;
     width: 30%;
     height: auto;
     margin-bottom: 20px;
     margin-left: 110px;
+
+}
+
+/*.containerprimeirapag li{
+    margin-top: 50%;
+}
+    */
+
+.containerprimeirapag h1{
+    font-size: 600%;
+    color: #FFF7D4;
+}
+
+.containerprimeirapag h2{
+    font-size: 600%;
+    color: #daa520;
+}
+
+.containerprimeirapag p{
+    font-size: 110%;
+    background-color: #201355;
+
+}
+
+.segunda-secao{
+    height: 100vh;
+    background-color: #FFF7D4;
 }
 
 .containersegundapag{
@@ -82,6 +122,7 @@ main p{
 }
 
 .containersegundapag p{
+    
     font-size: 150%;
 }
 
