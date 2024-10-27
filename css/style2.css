@@ -1,0 +1,120 @@
+
+/*estilo geral  */
+@font-face {
+    font-family: Duke;
+    src: url(/font/Duke\ Charming\ DEMO.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Folty;
+    src: url(/font/Folty-Medium.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Ramillas;
+    src: url(/font/TT\ Ramillas\ Trial\ Black.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Ramillas Out;
+    src: url(/font/TT\ Ramillas\ Trial\ Black\ Outline.ttf) format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #4f4789;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
+/* estilo cabecalho */
+
+header{
+    padding: 20px 2%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.classlogo{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.classlogo img{
+    width: 75px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+/* .classlogo img:hover{
+    transform: scale(5.05);
+    transition: 5s;
+} */
+
+.classlogo h1{
+    font-family: Duke;
+    color: #FFF7D4;
+    font-size: 38px;
+    margin-left: 5px;
+}
+
+.menu-desktop{
+    font-family: Folty;
+}
+
+header a{
+    font-size: 18px;
+    color: #FFF7D4;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover{
+    color: #daa520;
+    transform: scale(1.05);
+    transition: 1.5s;
+    /* box-shadow: 5px 5px 0px #3f3870; */
+}
+
+header nav ul{
+    white-space: nowrap;
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.butcont {
+    font-family: Folty;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50px;
+    background-color: #daa520;
+}
+.butcont:hover{
+    box-shadow: 0px 0px 8px#daa520;
+    transform: scale(1.05);
+    transition: 1.5s;
+}
+
