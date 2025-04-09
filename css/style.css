@@ -143,50 +143,8 @@ main p{
     font-size: 110%;
 }
 
-.segunda-secao{
-    height: 100vh;
-    background-color: #FFF7D4;
-    align-items: center;
+.segunda-secao span{
+    color: #4f4789;
 }
-
-.conteudo-segunda-pag{
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-}
-
-.container-segunda-pag{
-    gap: 20px;
-}
-
-.container-segunda-pag img{
-    position: absolute;
-    width: 30%;
-    height: auto;
-    margin-left: 110px;
-}
-
-.container-segunda-pag h1{
-    white-space: nowrap;
-    position: relative;
-    padding-top: 36%;
-    margin-left: 22px;
-    font-family: Duke;
-    font-size: 500%;
-}
-
-.texto-branco{
-    color: #FFF7D4;
-}
-
-.container-sobre-mim{
-    width: 30%;
-    padding-top: 10%;
-    margin-right: 10%;
-    font-family: Folty;
-    font-size: 150%;
-}
-
-
 
 

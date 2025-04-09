@@ -1,0 +1,182 @@
+/* Estilo geral */
+@font-face {
+    font-family: Duke;
+    src: url(/font/Duke\ Charming\ DEMO.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Folty;
+    src: url(/font/Folty-Medium.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Ramillas;
+    src: url(/font/TT\ Ramillas\ Trial\ Black.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Ramillas Out;
+    src: url(/font/TT\ Ramillas\ Trial\ Black\ Outline.ttf) format('truetype');
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.interface{
+    max-width: 1280px;
+}
+
+a{
+    text-decoration: none;
+    font-family: Folty;
+}
+/* Estilo geral */
+
+/* Estilo cabeçalho */
+
+header{
+
+    background-color: #4f4789;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #888579;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #FFF7D4;
+    transform: scale(1.05);
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 25px;
+    background-color: #daa520;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-contato button:hover{
+    box-shadow: 0 0 8px #daa520;
+}
+
+.interface{
+    font-family: Duke;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: fit-content; /* limita o tamanho ao conteúdo */
+}
+
+.logo h1{
+    font-size: 35px;
+    color: #FFF7D4;
+}
+  
+  
+.logo img {
+    width: 60px; /* ou o tamanho que quiser */
+    height: auto;
+    margin-bottom: 30px;
+}
+/* Estilho Cabecalho fim */
+
+/* Estilo Topo Site */
+
+main .interface{
+    max-width: 1280px;
+}
+
+.topo-site{
+    background-color: #4f4789;
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 10%;
+    position: relative; /* <- ESSENCIAL */
+}
+
+.txt-destaque-topo{
+    position: relative;
+    left: 20%;
+    margin-bottom: 5%;
+}
+
+.portfolio-cima{
+    font-family: Ramillas;
+    font-size: 100px;
+    position: absolute;
+    z-index: 3;
+    color: #FFF7D4;
+}
+  
+.imagem-topo img{
+    width: 400px;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+}
+
+.portfolio-fundo{
+    font-family: Ramillas Out;
+    font-size: 100px;
+    position: absolute;
+    color: #daa520;
+}
+
+.txt-box{
+    padding: 3%;
+    background-color: #4f4789;
+    margin-top: 35%;
+    left: 50%;
+    position: absolute;
+    color: #FFF7D4;
+    font-family: Folty;
+    font-size: 20px;
+}
+
+.txt-rodape-topo{
+    top: 400px;
+    color: #FFF7D4;
+    position: absolute;
+    z-index: 3;
+    font-family: Folty;
+    font-size: 20px;
+}
+
+.especialidades{
+    background-color: #FFF7D4;
+}
