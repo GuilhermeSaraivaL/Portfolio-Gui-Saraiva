@@ -33,24 +33,49 @@ body{
     overflow-x: hidden;
 }
 
+main{
+    padding-top: 100px;
+}
+
 .interface{
     max-width: 1280px;
+    padding: 10px 4%;
+}
+
+section{
+    padding: 100px 0;
+    min-height: 100vh;
 }
 
 a{
     text-decoration: none;
     font-family: Folty;
 }
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 25px;
+    background-color: #daa520;
+    border: 0;
+    cursor: pointer;
+}
+
 /* Estilo geral */
 
 /* Estilo cabeçalho */
 
 header{
-
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 1000;
     background-color: #4f4789;
+    box-shadow: 0 0 18px #37325e;
 }
 
-header > .interface{
+header >.interface{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,15 +97,7 @@ header nav ul li{
     padding: 0 40px;
 }
 
-header .btn-contato button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 25px;
-    background-color: #daa520;
-    border: 0;
-    cursor: pointer;
-}
+
 
 .btn-contato button:hover{
     box-shadow: 0 0 8px #daa520;
@@ -101,6 +118,10 @@ header .btn-contato button{
     font-size: 35px;
     color: #FFF7D4;
 }
+
+.txt-ponto{
+    color: #daa520;
+}
   
   
 .logo img {
@@ -112,7 +133,11 @@ header .btn-contato button{
 
 /* Estilo Topo Site */
 
-main .interface{
+section.topo-site{
+    padding: 4px 4%;
+}
+
+main.interface{
     max-width: 1280px;
 }
 
@@ -135,7 +160,7 @@ main .interface{
     margin-bottom: 5%;
 }
 
-.portfolio-cima{
+.portfolio-cima {
     font-family: Ramillas;
     font-size: 100px;
     position: absolute;
@@ -150,7 +175,7 @@ main .interface{
     z-index: 2;
 }
 
-.portfolio-fundo{
+.portfolio-fundo p{
     font-family: Ramillas Out;
     font-size: 100px;
     position: absolute;
@@ -160,8 +185,8 @@ main .interface{
 .txt-box{
     padding: 3%;
     background-color: #4f4789;
-    margin-top: 35%;
-    left: 50%;
+    top: 150px;
+    left: 600px;
     position: absolute;
     color: #FFF7D4;
     font-family: Folty;
@@ -177,6 +202,55 @@ main .interface{
     font-size: 20px;
 }
 
-.especialidades{
+/* Estilo especialidades */
+
+section.especialidades{
     background-color: #FFF7D4;
+}
+
+.titulo-especial{
+    font-family: Ramillas;
+    font-size: 38px;
+    color: #2e2e2e;
+    text-align: center;
+}
+
+.titulo-especial span{
+    color: #4f4789;
+}
+
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .espec-box{
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.especialidades .espec-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #daa5209f;
+}
+
+.especialidades .espec-box i{
+    font-size: 70px;
+    color: #4f4789;
+}
+
+.especialidades .espec-box h3{
+    color: #2e2e2e;
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.especialidades .espec-box p{
+    color: #2e2e2e;
+    font-size: 20px;
 }
