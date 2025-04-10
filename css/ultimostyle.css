@@ -50,17 +50,39 @@ section{
 a{
     text-decoration: none;
     font-family: Folty;
+    font-size: 16px;
 }
 
 .btn-contato button{
     padding: 10px 40px;
-    font-size: 18px;
+    font-family: Folty;
+    color: #211a0a;
+    font-size: 20px;
     font-weight: 600;
     border-radius: 25px;
     background-color: #daa520;
     border: 0;
     cursor: pointer;
 }
+
+.flex{
+    display: flex;
+}
+
+p{
+    font-family: Folty;
+}
+
+
+.txt-ponto-roxo{
+    color: #4f4789;
+}
+
+
+.txt-ponto-dourado{
+    color: #daa520;
+}
+  
 
 /* Estilo geral */
 
@@ -98,9 +120,9 @@ header nav ul li{
 }
 
 
-
 .btn-contato button:hover{
     box-shadow: 0 0 8px #daa520;
+    transform: scale(1.05);
 }
 
 .interface{
@@ -118,11 +140,6 @@ header nav ul li{
     font-size: 35px;
     color: #FFF7D4;
 }
-
-.txt-ponto{
-    color: #daa520;
-}
-  
   
 .logo img {
     width: 60px; /* ou o tamanho que quiser */
@@ -146,7 +163,7 @@ main.interface{
     height: 100vh;
 }
 
-.flex{
+.topo-site .flex{
     display: flex;
     align-items: center;
     justify-content: start;
@@ -175,7 +192,7 @@ main.interface{
     z-index: 2;
 }
 
-.portfolio-fundo p{
+.portfolio-fundo p1{
     font-family: Ramillas Out;
     font-size: 100px;
     position: absolute;
@@ -205,6 +222,9 @@ main.interface{
 /* Estilo especialidades */
 
 section.especialidades{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #FFF7D4;
 }
 
@@ -245,12 +265,100 @@ section.especialidades .flex{
 }
 
 .especialidades .espec-box h3{
-    color: #2e2e2e;
+    color: #211a0a;
     font-size: 28px;
     margin: 15px 0;
 }
 
 .especialidades .espec-box p{
-    color: #2e2e2e;
+    text-align: justify;
+    color: #211a0a;
     font-size: 20px;
+}
+/* Fim de Especialidades */
+
+/* Comeco Sobre mim */
+
+section.sobre-mim{
+    padding: 40px 4%;
+    background-color: #4f4789;
+}
+
+section.sobre-mim .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+section .txt-sobre h2{
+    margin-bottom: 20px;
+    font-family: Ramillas;
+    font-size: 40px;
+    color: #FFF7D4;
+}
+
+section .txt-sobre h2 span{
+    color: #daa520;
+}
+
+section .txt-sobre p{
+    text-align: justify;
+    color: #211a0a;
+    font-size: 20px;
+}
+
+.box-sobre-mim h3{
+    text-align: center;
+    text-transform: uppercase;
+    color: #211a0a;
+    font-size: 35px;
+}
+
+.box-sobre-mim{
+    padding: 30px;
+    background-color: #daa520;
+    margin-bottom: 50px;
+}
+
+.retrato-sobre img{
+    border-radius: 40px;
+    width: 450px;
+    height: auto;
+}
+
+.sobre-mim .txt-sobre .btn-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-mim .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #FFF7D4;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0px 30px;
+    transition: .2s;
+}
+
+.sobre-mim .txt-sobre .btn-social button:hover{
+    box-shadow: 0 0 8px #FFF7D4;
+    transform: scale(1.05);
+}
+
+/* Fim Sobre mim */
+
+/* Comeco Experiencia */
+
+section.experiencia{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFF7D4;
+}
+
+section.experiencia .flex{
+    flex-direction: column;
+    gap: 60px;
 }
