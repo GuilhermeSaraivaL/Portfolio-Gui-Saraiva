@@ -353,12 +353,59 @@ section .txt-sobre p{
 /* Comeco Experiencia */
 
 section.experiencia{
-    display: flex;
-    flex-direction: row;
     background-color: #FFF7D4;
 }
 
-section.experiencia .flex{
-    flex-direction: column;
-    gap: 60px;
+.grid-experiencia{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "universidade projetos"
+    "academico projetos"
+    "profissional projetos";
+    gap: 20px;
+}
+
+.exp-box h3{
+    word-wrap: break-word;
+    text-align: start;
+    font-size: 20px;
+}
+
+.exp-box{
+    word-wrap: break-word;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.exp-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #daa5209f;
+}
+
+.experiencia-universitaria{
+    grid-area: universidade;
+}
+
+.experiencia-academica{
+    grid-area: academico;
+}
+
+.experiencia-profissional{
+    grid-area: profissional;
+}
+
+.projetos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: projetos;
+    gap: 10px;
+}
+
+.projetos .exp-box{
+    background-size: cover;
+    background-position: 50%;
 }
