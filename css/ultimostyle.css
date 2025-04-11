@@ -252,6 +252,8 @@ section.especialidades .flex{
     margin-top: 45px;
     border-radius: 20px;
     transition: .2s;
+    word-wrap: break-word;
+    max-width: 300px;
 }
 
 .especialidades .espec-box:hover{
@@ -268,10 +270,10 @@ section.especialidades .flex{
     color: #211a0a;
     font-size: 28px;
     margin: 15px 0;
+    max-width: fit-content;
 }
 
 .especialidades .espec-box p{
-    text-align: justify;
     color: #211a0a;
     font-size: 20px;
 }
@@ -353,6 +355,7 @@ section .txt-sobre p{
 /* Comeco Experiencia */
 
 section.experiencia{
+    padding: 100px;
     background-color: #FFF7D4;
 }
 
@@ -365,6 +368,12 @@ section.experiencia{
     "academico projetos"
     "profissional projetos";
     gap: 20px;
+    background-color: #daa520;
+}
+
+.grid-experiencia h2{
+    font-size: 25px;
+    color: aqua;
 }
 
 .exp-box h3{
@@ -376,7 +385,6 @@ section.experiencia{
 .exp-box{
     word-wrap: break-word;
     padding: 40px;
-    margin-top: 45px;
     border-radius: 20px;
     transition: .2s;
 }
@@ -386,26 +394,43 @@ section.experiencia{
     box-shadow: 0 0 20px #daa5209f;
 }
 
-.experiencia-universitaria{
+.titulo-exp-box1{
     grid-area: universidade;
 }
 
-.experiencia-academica{
+.titulo-exp-box2{
     grid-area: academico;
 }
 
-.experiencia-profissional{
+.titulo-exp-box3{
     grid-area: profissional;
 }
+
+.titulo-exp-box4{
+    height: auto;
+    grid-area: projetos;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-exp-box4 h2{
+    grid-area: projetos;
+    text-align: center;
+} 
 
 .projetos{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-area: projetos;
     gap: 10px;
+    height: 443px;
+    align-items: center;
+    justify-content: center;
 }
 
 .projetos .exp-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-size: cover;
     background-position: 50%;
 }
