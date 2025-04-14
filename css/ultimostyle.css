@@ -219,6 +219,51 @@ main.interface{
     font-size: 20px;
 }
 
+/* Inicio Portfolio */
+
+section.portfolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF7D4;
+}
+
+.interfaceportfolio{
+    width: 100%;
+}
+
+.barra-especialidades{
+    background-color: #2e2e2e;
+}
+
+.barra-especialidades i{
+    color: #daa520;
+    font-size: 35px;
+}
+
+.exp-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 100px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.exp-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #daa5209f; 
+}
+
+.exp-box h3{
+    word-wrap: break-word;
+    text-align: start;
+    font-size: 20px;
+}
+
+
+/* Fim Portfolio */
+
 /* Estilo especialidades */
 
 section.especialidades{
@@ -354,7 +399,7 @@ section .txt-sobre p{
 
 /* Comeco Experiencia */
 
-section.experiencia{
+/* section.experiencia{
     padding: 100px;
     background-color: #FFF7D4;
 }
@@ -383,6 +428,7 @@ section.experiencia{
 }
 
 .exp-box{
+
     word-wrap: break-word;
     padding: 40px;
     border-radius: 20px;
@@ -433,4 +479,4 @@ section.experiencia{
     justify-content: center;
     background-size: cover;
     background-position: 50%;
-}
+} */
