@@ -228,24 +228,54 @@ section.portfolio{
     background-color: #FFF7D4;
 }
 
+.interfaceportfolio h2{
+    margin-bottom: 32px;
+    color: #211a0a;
+}
+
+.interfaceportfolio h2 span{
+    margin-bottom: 32px;
+    color: #daa520;
+}
+
+.flex.projetos{
+    background-color: #2e2e2e8a;
+}
+
 .interfaceportfolio{
     width: 100%;
+    overflow: hidden;
 }
 
 .barra-especialidades{
-    background-color: #2e2e2e;
+    border-top: solid #daa520;
+    border-bottom: solid #daa520;
+    background-color: #211a0a;
+    display: flex;
+    justify-content: space-between;
 }
 
-.barra-especialidades i{
-    color: #daa520;
-    font-size: 35px;
+.item{
+    animation: slide 15s linear infinite;
+    animation-delay: var(--delay);
+}
+
+.barra-especialidades img{
+    filter: brightness(0) saturate(100%) invert(86%) sepia(36%) saturate(3041%) hue-rotate(345deg) brightness(90%) contrast(88%);
+}
+
+@keyframes slide{
+    from{
+        transform: left(100%);
+    }
+    to{
+        transform: left(-50px);
+    }
 }
 
 .exp-box{
-    display: flex;
-    justify-content: space-between;
-    gap: 60px;
     padding: 100px;
+    margin: 55px;
     border-radius: 20px;
     transition: .2s;
 }
@@ -270,18 +300,18 @@ section.especialidades{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FFF7D4;
+    background-color: #4f4789;
 }
 
 .titulo-especial{
     font-family: Ramillas;
     font-size: 38px;
-    color: #2e2e2e;
+    color: #211a0a;
     text-align: center;
 }
 
 .titulo-especial span{
-    color: #4f4789;
+    color: #FFF7D4;
 }
 
 section.especialidades{
@@ -308,7 +338,7 @@ section.especialidades .flex{
 
 .especialidades .espec-box i{
     font-size: 70px;
-    color: #4f4789;
+    color: #FFF7D4;
 }
 
 .especialidades .espec-box h3{
@@ -328,7 +358,7 @@ section.especialidades .flex{
 
 section.sobre-mim{
     padding: 40px 4%;
-    background-color: #4f4789;
+    background-color: #FFF7D4;
 }
 
 section.sobre-mim .flex{
@@ -340,7 +370,7 @@ section .txt-sobre h2{
     margin-bottom: 20px;
     font-family: Ramillas;
     font-size: 40px;
-    color: #FFF7D4;
+    color: #211a0a;
 }
 
 section .txt-sobre h2 span{
