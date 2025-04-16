@@ -245,6 +245,7 @@ section.portfolio{
 .interfaceportfolio{
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .barra-especialidades{
@@ -252,11 +253,12 @@ section.portfolio{
     border-bottom: solid #daa520;
     background-color: #211a0a;
     display: flex;
-    justify-content: space-between;
 }
 
 .item{
-    animation: slide 15s linear infinite;
+    position: relative;
+    left: 100%;
+    animation: scroll 15s linear infinite;
     animation-delay: var(--delay);
 }
 
@@ -264,14 +266,15 @@ section.portfolio{
     filter: brightness(0) saturate(100%) invert(86%) sepia(36%) saturate(3041%) hue-rotate(345deg) brightness(90%) contrast(88%);
 }
 
-@keyframes slide{
-    from{
-        transform: left(100%);
+@keyframes scroll {
+    from {
+      left: 100%;
     }
-    to{
-        transform: left(-50px);
+    to {
+      left: -10px;
     }
-}
+  }
+  
 
 .exp-box{
     padding: 100px;
