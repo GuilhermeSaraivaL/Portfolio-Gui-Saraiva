@@ -528,3 +528,33 @@ section.experiencia{
     padding: 40px 4%;
     background-color: #4f4789;
 }
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+        'skillssoft' 'academico' 'hobbies'
+        'skillshard' 'academico' 'contato';
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.skillssoft{
+    grid-area: skillssoft;
+}
+
+.skillshard{
+    grid-area: skillshard;
+}
+
+.academico{
+    grid-area: academico;
+}
+
+.contato{
+    grid-area: contato;
+}
+
+.hobbies{
+    grid-area: hobbies;
+}
