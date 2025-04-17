@@ -84,6 +84,31 @@ p{
 }
   
 
+.titulo-especial{
+    font-family: Ramillas;
+    font-size: 38px;
+    color: #211a0a;
+    text-align: center;
+}
+
+.titulo-especial-roxo{
+    font-family: Ramillas;
+    font-size: 38px;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+.titulo-branco {
+    color: #ffffff;
+}
+
+.boxs a{
+    color: #FFF7D4;
+    text-decoration: none;
+    font-family: Folty;
+    font-size: 20px;
+}
+
 /* Estilo geral */
 
 /* Estilo cabeçalho */
@@ -146,6 +171,7 @@ header nav ul li{
     height: auto;
     margin-bottom: 30px;
 }
+
 /* Estilho Cabecalho fim */
 
 /* Estilo Topo Site */
@@ -398,17 +424,6 @@ section.especialidades{
     background-color: #4f4789;
 }
 
-.titulo-especial{
-    font-family: Ramillas;
-    font-size: 38px;
-    color: #211a0a;
-    text-align: center;
-}
-
-.titulo-especial span{
-    color: #FFF7D4;
-}
-
 section.especialidades{
     padding: 40px 4%;
 }
@@ -532,29 +547,88 @@ section.experiencia{
 .grid{
     display: grid;
     grid-template-areas: 
-        'skillssoft' 'academico' 'hobbies'
-        'skillshard' 'academico' 'contato';
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px;
+        'skillshard academico hobbies'
+        'skillssoft academico contato'
+    ;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 50px;
+    height: 70vh;
+    margin-top: 20px;
+}
+
+.box{
+    padding: 20px;
+}
+
+/* .box h3{
+    text-transform: uppercase;
+    text-align: center;
+    color: #211a0a;
+    font-size: 35px;
+} */
+
+.boxs h3{
+    text-transform: uppercase;
+    color: #FFF7D4;
+    font-size: 35px;
+}
+
+.boxs{
+    color: #1a1a1a;
+    font-size: 20px;
+    gap: 100px;
+}
+
+.boxs h3 img{
+    width: 30px;
+    filter: brightness(0) saturate(100%) invert(92%) sepia(9%) saturate(1367%) hue-rotate(322deg) brightness(110%) contrast(102%);
+}
+
+.boxs p img{
+    width: 10px;
+    filter: brightness(0) saturate(100%) invert(92%) sepia(9%) saturate(1367%) hue-rotate(322deg) brightness(110%) contrast(102%);
+}
+
+.boxs p1{
+    margin-top: 100px;
+    padding-top: 100px;
+
+}
+
+.boxs p1 img{
+    width: 35px;
+    filter: brightness(0) saturate(100%) invert(92%) sepia(9%) saturate(1367%) hue-rotate(322deg) brightness(110%) contrast(102%);
 }
 
 .skillssoft{
     grid-area: skillssoft;
+    /* background-color: aquamarine; */
+    border-top: #1a1a1a 2px solid;
+    border-bottom: #1a1a1a 2px solid;
 }
 
 .skillshard{
     grid-area: skillshard;
+    /* background-color: #ff00c8; */
+    border-top: #1a1a1a 2px solid;
+    border-bottom: #1a1a1a 2px solid;
 }
 
 .academico{
     grid-area: academico;
+    background-color: #FFF7D4;
 }
 
 .contato{
     grid-area: contato;
+    /* background-color: #d42222; */
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
 }
 
 .hobbies{
     grid-area: hobbies;
+    /* background-color: #d4a422; */
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
 }
