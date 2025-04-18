@@ -31,6 +31,8 @@ body{
     height: 100vh;
     margin: 0;
     overflow-x: hidden;
+    background-color: #4f4789;
+    box-sizing: border-box;
 }
 
 main{
@@ -82,7 +84,7 @@ p{
 .txt-ponto-dourado{
     color: #daa520;
 }
-  
+
 
 .titulo-especial{
     font-family: Ramillas;
@@ -103,10 +105,16 @@ p{
 }
 
 .boxs a{
-    color: #FFF7D4;
+    color: #cba6f7;
+    /* color: #FFF7D4; */
     text-decoration: none;
     font-family: Folty;
     font-size: 20px;
+}
+
+.importante{
+    color: #4f4789;
+    text-transform: uppercase;
 }
 
 /* Estilo geral */
@@ -165,7 +173,7 @@ header nav ul li{
     font-size: 35px;
     color: #FFF7D4;
 }
-  
+
 .logo img {
     width: 60px; /* ou o tamanho que quiser */
     height: auto;
@@ -201,27 +209,29 @@ main.interface{
     position: relative;
     left: 20%;
     margin-bottom: 5%;
+    font-size: 100px;
 }
 
-.portfolio-cima {
+.portfolio-cima p{
     font-family: Ramillas;
-    font-size: 100px;
     position: absolute;
     z-index: 3;
     color: #FFF7D4;
 }
-  
+
 .imagem-topo img{
+    padding-top: 30px;
     width: 400px;
     height: auto;
+}
+
+.imagem-topo {
     position: absolute;
     z-index: 2;
 }
 
-.portfolio-fundo p1{
+.portfolio-fundo p{
     font-family: Ramillas Out;
-    font-size: 100px;
-    position: absolute;
     color: #daa520;
 }
 
@@ -237,13 +247,16 @@ main.interface{
 }
 
 .txt-rodape-topo{
-    top: 400px;
     color: #FFF7D4;
-    position: absolute;
-    z-index: 3;
     font-family: Folty;
     font-size: 20px;
+    padding-top: 30px;
+    position: absolute;
+    z-index: 3;
+    bottom: 100px;
 }
+
+/* Fim Topo */
 
 /* Inicio Portfolio */
 
@@ -359,7 +372,7 @@ section.portfolio{
     }
   }
 
-  
+
 @keyframes run {
     from {
       right: 100%;
@@ -368,7 +381,7 @@ section.portfolio{
       right: -60px;
     }
   }
-  
+
 
 .exp-box{
     padding: 130px;
@@ -403,7 +416,7 @@ section.portfolio{
 
 .exp-box:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 20px #daa5209f; 
+    box-shadow: 0 0 20px #daa5209f;
 }
 
 .exp-box h3{
@@ -544,9 +557,13 @@ section.experiencia{
     background-color: #4f4789;
 }
 
+.interface h1{
+    padding-bottom: 30px;
+}
+
 .grid{
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         'skillshard academico hobbies'
         'skillssoft academico contato'
     ;
@@ -556,8 +573,54 @@ section.experiencia{
     margin-top: 20px;
 }
 
+.academico{
+    grid-area: academico;
+    text-align: center;
+    border-top: #1a1a1a 2px solid;
+    border-bottom: #1a1a1a 2px solid;
+}
+
+.academico h2{
+    font-family: Ramillas;
+    font-size: 35px;
+    color: #FFF7D4;
+}
+
+.academico h3{
+    text-align: center;
+    text-transform: uppercase;
+    color: #daa520;
+    font-size: 35px;
+}
+
+.grid-imgs{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    justify-items: center;
+    align-items: center;
+}
+
 .box{
+    background-color: #FFF7D4;
     padding: 20px;
+}
+
+.box img{
+    width: 100%;
+    height: auto;
+    transition: .5;
+}
+
+.box img:hover{
+    transform: scale(4.05);
+    height: auto;
+}
+
+.box p{
+    text-align: justify;
+    color: #1a1a1a;
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 /* .box h3{
@@ -573,15 +636,21 @@ section.experiencia{
     font-size: 35px;
 }
 
-.boxs{
-    color: #1a1a1a;
-    font-size: 20px;
-    gap: 100px;
-}
-
 .boxs h3 img{
     width: 30px;
     filter: brightness(0) saturate(100%) invert(92%) sepia(9%) saturate(1367%) hue-rotate(322deg) brightness(110%) contrast(102%);
+}
+
+.boxs p{
+    color: #1a1a1a;
+    /* text-shadow:
+    -1px -1px 0 #FFF7D4,
+     1px -1px 0 #FFF7D4,
+    -1px  1px 0 #FFF7D4,
+     1px  1px 0 #FFF7D4; */
+    font-size: 20px;
+    padding-top: 10px;
+
 }
 
 .boxs p img{
@@ -614,21 +683,163 @@ section.experiencia{
     border-bottom: #1a1a1a 2px solid;
 }
 
-.academico{
-    grid-area: academico;
-    background-color: #FFF7D4;
-}
-
 .contato{
     grid-area: contato;
     /* background-color: #d42222; */
-    border-top: black 2px solid;
-    border-bottom: black 2px solid;
+    border-top: #1a1a1a 2px solid;
+    border-bottom: #1a1a1a 2px solid;
 }
 
 .hobbies{
     grid-area: hobbies;
     /* background-color: #d4a422; */
-    border-top: black 2px solid;
-    border-bottom: black 2px solid;
+    border-top: #1a1a1a 2px solid;
+    border-bottom: #1a1a1a 2px solid;
 }
+
+/* Fim Experiencia */
+
+/* Celular */
+
+@media screen and (max-width: 1022px) {
+
+    /* estilizacao geral */
+
+    h, h1, h2, h3, h4, h5, h6{
+        text-align: center;
+    }
+
+    body{
+        background-color: #4f4789;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+
+    .grid{
+        grid-template-areas:
+            'academico'
+            'skillssoft'
+            'skillshard'
+            'contato'
+            'hobbies'
+        ;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* fim estilizacao geral */
+
+    /* Cabecalho */
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+
+    header{
+        position: static;
+        align-items: center;
+        box-shadow: none;
+        height: 0px;
+    }
+
+    .logo{
+        position: static;
+        margin: 0 auto;
+        background-size: contain;
+    }
+    /* .logo img{
+        width: 40px;
+    } */
+
+    /* fim cabecalho */
+
+    /* Estilo Topo Site */
+
+    section.topo-site{
+        padding: 20px 8%;
+        background-color: none;
+        position: relative;
+    }
+
+    .controle-topo{
+        max-width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10%;
+        position: relative; /* <- ESSENCIAL */
+    }
+
+    .topo-site .flex{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-left: 0%;
+        position: relative; /* <- ESSENCIAL */
+    }
+
+    .imagem-topo img{
+        padding-top: 50px;
+        width: 250px;
+        height: auto;
+    }
+
+    .txt-destaque-topo{
+        font-size: 50px;
+        left: 0%;
+        margin-bottom: 5%;
+    }
+
+    .txt-box{
+        padding: 3%;
+        background-color: #4f4789;
+        top: 200px;
+        left: 0px;
+        position: absolute;
+        z-index: 3;
+        white-space: nowrap;
+    }
+
+    .txt-rodape-topo{
+        padding-top: 0px;
+        position: absolute;
+        z-index: 3;
+        bottom: 200px;
+    }
+
+    /* Inicio Portfolio */
+
+    /* Fim Portfolio */
+
+    /* Inicio Especialidades */
+
+    /* Fim Especialidades */
+
+    /* Inicio Sobre mim */
+
+    section.sobre-mim{
+        padding: 40px 8%;
+    }
+
+    section .txt-sobre h2{
+        margin-bottom: 20px;
+        font-family: Ramillas;
+        font-size: 30px;
+        color: #211a0a;
+    }
+
+    .retrato-sobre img{
+        border-radius: 40px;
+        width: 300px;
+        height: auto;
+    }
+
+    /* Fim Sobre mim */
+
+    /* Inicio Experiencia */
+
+    /* Fim Experiencia */
+}
+
+/* Fim celular */
