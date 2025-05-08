@@ -691,6 +691,10 @@ section.experiencia{
     .menu-mobile{
         display: none;
     }
+
+    .btn-abrir-menu-mobile{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1022px) {
@@ -734,6 +738,7 @@ section.experiencia{
     }
 
     .menu-mobile{
+        display: block;
         backdrop-filter: blur(5px);
         background-color: #37325eea;
         height: 100vh;
