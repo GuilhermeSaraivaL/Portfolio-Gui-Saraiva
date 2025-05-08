@@ -142,12 +142,12 @@ header a{
     transition: .2s;
 }
 
-header a:hover{
+header nav.menu-desktop a:hover{
     color: #FFF7D4;
     transform: scale(1.05);
 }
 
-header nav ul li{
+header nav.menu-desktop ul li{
     display: inline-block;
     padding: 0 40px;
 }
@@ -181,6 +181,74 @@ header nav ul li{
 }
 
 /* Estilho Cabecalho fim */
+
+/* Estilo Menu Mobile */
+
+.btn-abrir-menu-mobile i{
+    color: #FFF7D4;
+    font-size: 40px;
+}
+
+.menu-mobile{
+    backdrop-filter: blur(5px);
+    background-color: #37325eea;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-background{
+    display: block;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 10%;
+}
+
+.menu-mobile .btn-fechar i{
+    font-size: 30px;
+    color: #FFF7D4;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}   
+
+.menu-mobile nav ul li a{
+    color: #FFF7D4;
+    font-size: 20px;
+    padding: 20px 10%;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #FFF7D4;
+    display: block;
+    color: #4f4789;
+    font-size: 25px;
+    transition: .5s;
+}
+
+.overlay-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none; /* Escondido por padrão */
+}
+
+/* fim estilo mobile */
 
 /* Estilo Topo Site */
 
@@ -299,15 +367,6 @@ section.portfolio{
     border-bottom: solid #daa520;
     background-color: #211a0a;
 }
-
-/* .barra-especialidades:hover .item, .barra-especialidades:hover .itemguibs{
-    animation-play-state: paused;
-    filter: grayscale(1);
-}
-
-.barra-especialidades .item:hover, .barra-especialidades .itemguibs:hover{
-    filter: none;
-} */
 
 .item{
     width: 50px;
@@ -623,13 +682,6 @@ section.experiencia{
     margin-top: 10px;
 }
 
-/* .box h3{
-    text-transform: uppercase;
-    text-align: center;
-    color: #211a0a;
-    font-size: 35px;
-} */
-
 .boxs h3{
     text-transform: uppercase;
     color: #FFF7D4;
@@ -707,6 +759,7 @@ section.experiencia{
 
     h, h1, h2, h3, h4, h5, h6{
         text-align: center;
+        font-size: 30px;
     }
 
     body{
@@ -730,6 +783,12 @@ section.experiencia{
     }
 
     /* fim estilizacao geral */
+
+    /* Comeco menu mobile */
+
+
+    
+    /* Fim menu mobile */
 
     /* Cabecalho */
     .menu-desktop, .btn-contato{
@@ -814,6 +873,10 @@ section.experiencia{
 
     /* Inicio Especialidades */
 
+    section.especialidades{
+        padding: 40px 8%;
+    }
+
     /* Fim Especialidades */
 
     /* Inicio Sobre mim */
@@ -838,6 +901,18 @@ section.experiencia{
     /* Fim Sobre mim */
 
     /* Inicio Experiencia */
+
+    section.experiencia{
+        padding: 40px 8%;
+    }
+
+    .boxs p1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+        padding-top: 5px;
+    }
 
     /* Fim Experiencia */
 }
