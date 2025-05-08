@@ -180,6 +180,34 @@ header nav.menu-desktop ul li{
     margin-bottom: 30px;
 }
 
+.curriculo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.btn-curriculo i {
+    font-size: 30px;
+}
+
+.btn-curriculo{
+    padding: 10px 40px;
+    font-family: Folty;
+    color: #211a0a;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 25px;
+    background-color: #daa520;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-curriculo:hover{
+    box-shadow: 0 0 8px #daa520;
+    transform: scale(1.05);
+}
+
 /* Estilho Cabecalho fim */
 
 
@@ -188,15 +216,11 @@ header nav.menu-desktop ul li{
 
 section.topo-site{
     padding: 4px 4%;
+    background-color: #4f4789;
 }
 
 main.interface{
     max-width: 1280px;
-}
-
-.topo-site{
-    background-color: #4f4789;
-    height: 100vh;
 }
 
 .topo-site .flex{
