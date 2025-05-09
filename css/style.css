@@ -126,7 +126,7 @@ html, body {
 *{
     box-sizing: border-box;
 }
-  
+
 
 /* Estilo geral */
 
@@ -272,6 +272,53 @@ main.interface{
     position: absolute;
     z-index: 3;
     bottom: 100px;
+}
+
+.txt-rodape-topo span{
+    position: relative;
+}
+
+.txt-rodape-topo span::before{
+    content: "";
+    color: #daa520;
+    animation: digitar 10s forwards;
+}
+
+.txt-rodape-topo span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #daa520;
+    right: -10px;
+    animation: blink .8s infinite, escrever 10s steps(15) forwards;
+    width: calc(100% + 10px);
+    background-color: #4f4789;
+}
+
+@keyframes digitar {
+    0%,50%{
+        content: "O Guibs";
+    }
+
+    50%,100%{
+        content: "Desenvolvedor Front-End";
+    }
+}
+
+@keyframes blink{
+    0%{
+        border-left: 2px solid #4f4789;
+    }
+}
+
+@keyframes escrever {
+    0%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0%;
+    }
+
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 10px);
+    }
 }
 
 .btn-curriculo i {
@@ -807,7 +854,7 @@ section.experiencia{
 
     .menu-mobile nav ul{
         text-align: right;
-    }   
+    }
 
     .menu-mobile nav ul li a{
         color: #FFF7D4;
@@ -835,7 +882,7 @@ section.experiencia{
     }
 
     /* fim estilo mobile */
-    
+
     /* Fim menu mobile */
 
     /* Cabecalho */
