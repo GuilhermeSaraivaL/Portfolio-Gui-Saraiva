@@ -187,26 +187,7 @@ header nav.menu-desktop ul li{
     padding: 50px;
 }
 
-.btn-curriculo i {
-    font-size: 30px;
-}
 
-.btn-curriculo{
-    padding: 10px 40px;
-    font-family: Folty;
-    color: #211a0a;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 25px;
-    background-color: #daa520;
-    border: 0;
-    cursor: pointer;
-}
-
-.btn-curriculo:hover{
-    box-shadow: 0 0 8px #daa520;
-    transform: scale(1.05);
-}
 
 /* Estilho Cabecalho fim */
 
@@ -280,6 +261,27 @@ main.interface{
     position: absolute;
     z-index: 3;
     bottom: 100px;
+}
+
+.btn-curriculo i {
+    font-size: 30px;
+}
+
+.btn-curriculo{
+    padding: 10px 40px;
+    font-family: Folty;
+    color: #211a0a;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 25px;
+    background-color: #daa520;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-curriculo:hover{
+    box-shadow: 0 0 8px #daa520;
+    transform: scale(1.05);
 }
 
 /* Fim Topo */
@@ -900,6 +902,10 @@ section.experiencia{
         position: absolute;
         z-index: 3;
         bottom: 200px;
+    }
+
+    .btn-curriculo{
+        margin-top: 20px;
     }
 
     /* Inicio Portfolio */
