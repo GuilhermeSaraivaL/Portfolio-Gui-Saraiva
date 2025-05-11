@@ -30,9 +30,9 @@ html{
 body{
     height: 100vh;
     margin: 0;
-    overflow-x: hidden;
     background-color: #4f4789;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 main{
@@ -45,7 +45,6 @@ main{
 }
 
 section{
-    padding: 100px 0;
     min-height: 100vh;
 }
 
@@ -55,14 +54,18 @@ a{
     font-size: 16px;
 }
 
+#Contato, #Inicio, #Projetos, #Sobre, #Especialidades, #Experiencia{
+    scroll-margin-top: 100px;
+}
+
 .btn-contato button{
     padding: 10px 40px;
     font-family: Folty;
-    color: #211a0a;
+    color: #1a1a1a;
     font-size: 20px;
     font-weight: 600;
     border-radius: 25px;
-    background-color: #daa520;
+    background-color: #ffffff;
     border: 0;
     cursor: pointer;
 }
@@ -76,8 +79,8 @@ p{
 }
 
 
-.txt-ponto-roxo{
-    color: #4f4789;
+.txt-ponto-branco{
+    color: #ffffff;
 }
 
 
@@ -104,23 +107,29 @@ p{
     color: #ffffff;
 }
 
-.boxs a{
+.links{
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* .boxs a{
     color: #cba6f7;
-    /* color: #FFF7D4; */
     text-decoration: none;
     font-family: Folty;
     font-size: 20px;
-}
+} */
 
 .importante{
     color: #4f4789;
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 html, body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 *{
@@ -207,7 +216,7 @@ header nav.menu-desktop ul li{
 /* Estilo Topo Site */
 
 section.topo-site{
-    padding: 4px 4%;
+    padding: 40px 4%;
     background-color: #4f4789;
 }
 
@@ -234,7 +243,7 @@ main.interface{
     font-family: Ramillas;
     position: absolute;
     z-index: 3;
-    color: #FFF7D4;
+    color: #ffffff;
 }
 
 .imagem-topo img{
@@ -274,53 +283,42 @@ main.interface{
   width: 40px; /* largura fixa para alinhar os textos */
 }
 
-
-.txt-box a{
-    color: #FFF7D4;
-    text-decoration: underline;
-    font-size: 20px;
-    text-align: justify;
-}
-
 .txt-rodape-topo{
     padding-top: 35px;
     color: #FFF7D4;
-    font-family: Folty;
-    font-size: 20px;
     display: flex;      
     align-items: center;
     justify-content: center;
 }
 
 .txt-rodape-topo p{
+    font-family: Folty;
+    font-size: 25px;
     white-space: nowrap;
-    overflow: hidden;
-    border-right: 4px solid #daa520;
-    width: 28ch;
-    animation: escrever 2s steps(31), blink 0.7s infinite step-end alternate;
+    /* overflow: hidden; */
+    /* border-right: 4px solid #daa520; */
+    /* width: 32ch; */
+    /* animation: escrever 2s steps(32), blink 0.7s infinite step-end alternate; */
 }
 
-.txt-rodape-topo p span{
-    color: #daa520;
-}
-
-@keyframes blink{
+ /* @keyframes blink{
     50%{
         border-color: transparent;
     }
-}
+} */
 
-@keyframes escrever {
+/* @keyframes escrever {
     from{
         width: 0;
     }
-}
+} */
 
 /* Fim Topo */
 
 /* Inicio Portfolio */
 
 section.portfolio{
+    padding: 40px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -482,14 +480,11 @@ section.portfolio{
 /* Estilo especialidades */
 
 section.especialidades{
+    padding: 40px 4%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #4f4789;
-}
-
-section.especialidades{
-    padding: 40px 4%;
 }
 
 section.especialidades .flex{
@@ -512,7 +507,7 @@ section.especialidades .flex{
 
 .especialidades .espec-box i{
     font-size: 70px;
-    color: #FFF7D4;
+    color: #ffffff;
 }
 
 .especialidades .espec-box h3{
@@ -533,6 +528,7 @@ section.especialidades .flex{
 section.sobre-mim{
     padding: 40px 4%;
     background-color: #FFF7D4;
+    position: relative;
 }
 
 section.sobre-mim .flex{
@@ -547,7 +543,7 @@ section .txt-sobre h2{
     color: #211a0a;
 }
 
-section .txt-sobre h2 span{
+section .titulo-dourado{
     color: #daa520;
 }
 
@@ -620,7 +616,8 @@ section.experiencia{
     ;
     grid-template-columns: 1fr 2fr 1fr;
     gap: 50px;
-    height: 70vh;
+    height: auto;
+    min-height: 70vh;
     margin-top: 20px;
 }
 
@@ -634,7 +631,7 @@ section.experiencia{
 .academico h2{
     font-family: Ramillas;
     font-size: 35px;
-    color: #FFF7D4;
+    color: #ffffff;
 }
 
 .academico h3{
@@ -676,13 +673,13 @@ section.experiencia{
 
 .boxs h3{
     text-transform: uppercase;
-    color: #FFF7D4;
+    color: #ffffff;
     font-size: 35px;
 }
 
 .boxs h3 img{
     width: 30px;
-    filter: brightness(0) saturate(100%) invert(92%) sepia(9%) saturate(1367%) hue-rotate(322deg) brightness(110%) contrast(102%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(226deg) brightness(105%) contrast(101%);
 }
 
 .boxs p{
@@ -699,7 +696,7 @@ section.experiencia{
 
 .boxs p img{
     width: 10px;
-    filter: brightness(0) saturate(100%) invert(92%) sepia(9%) saturate(1367%) hue-rotate(322deg) brightness(110%) contrast(102%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(226deg) brightness(105%) contrast(101%);;
 }
 
 .boxs p1{
@@ -743,6 +740,68 @@ section.experiencia{
 
 /* Fim Experiencia */
 
+/* comeco formulario */
+
+section.formulario{
+    padding: 80px 4%;
+    background-color: #FFF7D4;
+    position: relative;
+    min-height: 70vh;
+}
+
+.formulario h2{
+    padding-bottom: 20px;
+    color: #211a0a;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea{
+    width: 100%;
+    padding: 20px 15px;
+    border-radius: 15px;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form button{
+    padding: 20px 0;
+    border-radius: 15px;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    background-color: #daa520;
+    color: #211a0a;
+    cursor: pointer;
+    font-family: Folty;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.btn-inicio-site{
+    text-align: center;
+}
+
+.btn-inicio-site i{
+    font-size: 40px;
+    color: #211a0a;
+}
+
+/* fim formulario */
+
 /* Celular */
 
 @media screen and (min-width: 1023px){
@@ -751,6 +810,10 @@ section.experiencia{
     }
 
     .btn-abrir-menu-mobile{
+        display: none;
+    }
+
+    .btn-inicio-site{
         display: none;
     }
 }
@@ -931,11 +994,6 @@ section.experiencia{
 
     .txt-rodape-topo{
         margin-top: 120px;
-    }
-
-    .txt-rodape-topo p{
-        width: 28ch;
-        animation: escrever 2s steps(31), blink 0.7s infinite step-end alternate;
     }
 
     /* Inicio Portfolio */
