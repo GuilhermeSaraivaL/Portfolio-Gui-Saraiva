@@ -78,16 +78,13 @@ p{
     font-family: Folty;
 }
 
-
 .txt-ponto-branco{
     color: #ffffff;
 }
 
-
 .txt-ponto-dourado{
     color: #daa520;
 }
-
 
 .titulo-especial{
     font-family: Ramillas;
@@ -341,6 +338,7 @@ section.portfolio{
 
 .flex.projetos{
     background-color: #2e2e2e8a;
+    width: 100%;
 }
 
 .interfaceportfolio{
@@ -440,6 +438,7 @@ section.portfolio{
     background-size: cover;
     background-position: 50% 50%;
     position: relative;
+    background-color: #FFF7D4;
 }
 
 .overlay{

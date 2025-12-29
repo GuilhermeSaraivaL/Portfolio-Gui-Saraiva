@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/css/stylecalc.css">
+    <link rel="icon" href="imgs/calculadora-simples.png" type="image/png">
+</head>
+<body>
+
+    <h1>Calculadora do Guibs</h1>
+
+    <div class="calculator">
+        <div class="tela">
+            <input type="text" disabled id="display">
+            <img src="/imgs/guibs.png" alt="">
+        </div>
+
+        <div class="box-buttons">
+            <button onclick="clean()">C</button>
+            <button onclick="back()">&lt;</button>
+            <button  onclick="insertToDisplay('/')">/</button>
+            <button  onclick="insertToDisplay('*')">*</button>
+            <button  onclick="insertToDisplay('7')">7</button>
+            <button  onclick="insertToDisplay('8')">8</button>
+            <button  onclick="insertToDisplay('9')">9</button>
+            <button  onclick="insertToDisplay('-')">-</button>
+            <button  onclick="insertToDisplay('4')">4</button>
+            <button  onclick="insertToDisplay('5')">5</button>
+            <button  onclick="insertToDisplay('6')">6</button>
+            <button  onclick="insertToDisplay('+')">+</button>
+            <button  onclick="insertToDisplay('1')">1</button>
+            <button  onclick="insertToDisplay('2')">2</button>
+            <button  onclick="insertToDisplay('3')">3</button>
+            <button  onclick="insertToDisplay('0')" class="btn-0">0</button>
+            <button  onclick="insertToDisplay('.')">.</button>
+            <button ondblclick="clean()" onclick="result()" class="btn-result">=</button> 
+        </div>
+
+    </div>
+    <script src="/js/Calculadora.js"></script>
+</body>
+</html>
